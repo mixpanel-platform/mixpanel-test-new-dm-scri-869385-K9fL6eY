@@ -23,10 +23,10 @@
     <script type="text/cq" id="cq">
       function main() {
         return Events({
-          from_date: "2015-05-01",
-          to_date: "2016-02-02"
+          from_date: '2015-05-01',
+          to_date: '2016-02-02'
         })
-        .filter(function(event) { return event.name == "purchase" })
+        .filter(function(event) { return event.name == 'purchase' })
         // numeric_summary will return the count and the sum of the value
         // returned from its accessor function
         .groupBy(
